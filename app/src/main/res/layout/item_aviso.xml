@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="290dp"
+    android:layout_height="match_parent"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/card_branco">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TAG / CATEGORIA -->
+        <TextView
+            android:id="@+id/txtTagAviso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EVENTO"
+            android:textColor="@color/principal_laranja_botoes"
+            android:textStyle="bold"
+            android:textSize="11sp" />
+
+        <!-- TÍTULO -->
+        <TextView
+            android:id="@+id/txtTituloAviso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Título do Aviso"
+            android:textColor="@color/principal_marrom_escuro"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <!-- DESCRIÇÃO -->
+        <TextView
+            android:id="@+id/txtDescricaoAviso"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Descrição detalhada do aviso ou evento paroquial."
+            android:textColor="@color/texto_escuro"
+            android:textSize="13sp"
+            android:layout_marginTop="6dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.1"/>
+
+        <!-- RODAPÉ: DATA E LOCAL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/txtDataHoraAviso"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="00/00 • 00h"
+                android:textColor="@color/texto_secundario"
+                android:textStyle="bold"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtLocalAviso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matriz"
+                android:textColor="@color/texto_secundario"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

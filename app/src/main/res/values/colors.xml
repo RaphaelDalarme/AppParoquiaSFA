@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="principal_laranja_botoes">#D35400</color> <color name="principal_marrom_escuro">#4A2711</color> <color name="fundo_app">#F8F9FA</color> <color name="card_branco">#FFFFFF</color>
+
+    <color name="texto_escuro">#2C3E50</color> <color name="texto_secundario">#7F8C8D</color> <color name="barra_selecionada">#EAECEE</color>
+</resources>

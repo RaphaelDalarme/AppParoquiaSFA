@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fundo_app">
+
+    <!-- Cabeçalho Principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/btnVoltarLiturgia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Voltar"
+            android:textSize="15sp"
+            android:textColor="@color/texto_secundario"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liturgia Diária"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/principal_marrom_escuro"/>
+
+        <TextView
+            android:id="@+id/tvDataLiturgia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carregando data..."
+            android:textSize="14sp"
+            android:textColor="@color/principal_laranja_botoes"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"/>
+    </LinearLayout>
+
+    <!-- Indicador de Carregamento sutil -->
+    <ProgressBar
+        android:id="@+id/progressLiturgia"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:theme="@style/Widget.AppCompat.ProgressBar"/>
+
+    <!-- Abas da Liturgia -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutLiturgia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fundo_app"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/principal_laranja_botoes"
+        app:tabTextColor="@color/texto_secundario"
+        app:tabIndicatorColor="@color/principal_laranja_botoes"
+        app:tabIndicatorHeight="3dp"
+        android:elevation="0dp"/>
+
+    <!-- Conteúdo que desliza -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerLiturgia"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_missas"
+        android:icon="@drawable/ic_missa"
+        android:title="Missas" />
+    <item
+        android:id="@+id/nav_confissoes"
+        android:icon="@drawable/ic_confissao"
+        android:title="Confissão" />
+    <item
+        android:id="@+id/nav_evangelho"
+        android:icon="@drawable/ic_evangelho"
+        android:title="Evangelho" />
+    <item
+        android:id="@+id/nav_eventos"
+        android:icon="@drawable/ic_evento"
+        android:title="Eventos" />
+</menu>

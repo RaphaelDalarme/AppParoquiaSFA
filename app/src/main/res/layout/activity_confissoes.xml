@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fundo_app">
+
+    <!-- Topo da Tela -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/btnVoltarConfissoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Voltar"
+            android:textSize="15sp"
+            android:textColor="@color/texto_secundario"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sacramento da Reconciliação"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/principal_marrom_escuro"/>
+    </LinearLayout>
+
+    <!-- Abas -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutConfissoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fundo_app"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabSelectedTextColor="@color/principal_laranja_botoes"
+        app:tabTextColor="@color/texto_secundario"
+        app:tabIndicatorColor="@color/principal_laranja_botoes"
+        app:tabIndicatorHeight="3dp"
+        android:elevation="0dp"/>
+
+    <!-- Conteúdo Deslizante -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerConfissoes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
