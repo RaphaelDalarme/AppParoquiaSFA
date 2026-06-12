@@ -54,7 +54,7 @@ O aplicativo gerencia duas entidades principais no banco de dados `paroquia_data
 
 1. Faça o clone deste repositório:
    ```bash
-   git clone [https://github.com/SEU_USUARIO/appParoquiaSFA.git]([https://github.com/SEU_USUARIO/appParoquiaSFA.git)](https://github.com/RaphaelDalarme/AppParoquiaSFA)
+   git clone [(https://github.com/RaphaelDalarme/AppParoquiaSFA)]
 2. Abra o Android Studio.
 3. Selecione a opção Open an Existing Project e escolha a pasta do projeto clonado.
 4. Espere o Gradle sincronizar todas as dependências do projeto.
